@@ -1,0 +1,11 @@
+#about i
+{
+    border-radius: 5px;
+    border: 2px var(--main-color) solid;
+    background: var(--second-color);
+}
+
+#about i:hover
+{
+    text-decoration: none;
+}

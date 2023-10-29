@@ -1,0 +1,11 @@
+#contact i
+{
+    border-radius: 5px;
+    border: 2px var(--main-color) solid;
+    background: var(--second-color);
+}
+
+#contact i:hover
+{
+    text-decoration: none;
+}

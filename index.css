@@ -1,88 +1,3 @@
-*
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: none;
-
-    font-family: 'Cinzel', serif;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-}
-
-:root
-{
-    --main-color: #7A0B08;
-    --second-color: #E7E7E7;
-}
-
-.intro
-{
-    width: 100%;
-    height: 100vh;
-    background:  linear-gradient(rgb(0, 0, 0, 0), rgba(255,255,255,0.4), rgba(0,0,0,0)), url(img/bg-img.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.logo
-{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px var(--main-color) solid;
-}
-
-nav
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background: transparent;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 28px 12%;
-}
-
-nav a i
-{
-    margin: 10px;
-    padding: 10px;
-    color: var(--main-color);
-    font-size: 20px;
-    font-weight: 500;
-    transition: all 0.55s ease;
-
-    font-style: normal;
-    
-    font-size: 20px;
-}
-
-nav a
-{
-    cursor: auto;
-}
-
-nav a i:hover
-{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#drop-down
-{
-    display: none;
-}
-
-#drop-down i:hover
-{
-    text-decoration: none;
-}
-
 #home i
 {
     border-radius: 5px;
@@ -97,8 +12,13 @@ nav a i:hover
 
 .center-text
 {
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100vh;
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,63 +70,4 @@ nav a i:hover
 {
     background: var(--main-color);
     color: var(--second-color);
-}
-
-@media (max-width: 1100px)
-{
-    nav
-    {
-        padding: 28px 8%;
-    }
-}
-
-@media (max-width: 900px)
-{
-    nav
-    {
-        padding: 28px 4%;
-    }
-}
-
-@media (max-width: 500px)
-{
-    
-    nav
-    {
-        padding: 15px 4%;
-    }
-
-    nav .content
-    {
-        position: absolute;
-        
-        right: 4%;
-        top: 30px;
-
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .center-text
-    {
-        padding: 10px;
-        padding-top: 40px;
-    }
-
-    .center-text h1
-    {
-        font-size: 40px;
-    }
-
-    .center-text p
-    {
-        font-size: 15px;
-    }
-
-    .center-text h3
-    {
-        font-size: 20px;
-    }
 }

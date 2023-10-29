@@ -1,0 +1,11 @@
+#pricing i
+{
+    border-radius: 5px;
+    border: 2px var(--main-color) solid;
+    background: var(--second-color);
+}
+
+#pricing i:hover
+{
+    text-decoration: none;
+}
