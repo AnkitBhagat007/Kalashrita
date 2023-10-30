@@ -106,31 +106,64 @@ nav a i:hover
     }
 }
 
+@media (max-width: 700px)
+{
+    html
+    {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 600px)
 {
+    html
+    {
+        font-size: 10px;
+    }
+
     nav .content i
     {
         margin: 20px 5px;
     }
-}
-
-@media (max-width: 500px)
-{
-    nav
+    #drop-down
     {
-        padding: 15px 4%;
+        display: inline-block;
     }
 
-    nav .content
+    .content
     {
-        position: absolute;
-        
-        right: 4%;
-        top: 30px;
+        display: none;
+    }
 
+    .tabs:hover .content
+    {
         display: flex;
         align-items: flex-end;
         flex-direction: column;
         gap: 20px;
+
+        background-color: var(--second-color);
+        border-radius: var(--corner-radius);
+        border: 2px var(--main-color) solid;
+
+        position: fixed;
+        
+        right: 4%;
+        top: 30px;
+
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 500px)
+{    
+    html
+    {
+        font-size: 8px;
+    }
+
+    nav
+    {
+        padding: 15px 4%;
     }
 }
