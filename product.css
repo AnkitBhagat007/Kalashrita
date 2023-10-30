@@ -18,3 +18,31 @@
 {
     text-decoration: none;
 }
+
+.catalogue
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 15% 28px 10% 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogue-content
+{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    align-items: center;
+    gap: 2rem;
+}
+
+.catalogue-content .container
+{
+    border-radius: var(--corner-radius);
+    border: 2px var(--main-color) solid;
+}
